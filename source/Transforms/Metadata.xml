@@ -1,0 +1,22 @@
+﻿<metadata>
+  <!--
+  This sample removes the class: android.support.v4.content.AsyncTaskLoader.LoadTask:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='AsyncTaskLoader.LoadTask']" />
+  
+  This sample removes the method: android.support.v4.content.CursorLoader.loadInBackground:
+  <remove-node path="/api/package[@name='android.support.v4.content']/class[@name='CursorLoader']/method[@name='loadInBackground']" />
+  
+  Documentation: https://docs.microsoft.com/en-us/xamarin/android/platform/binding-java-library/customizing-bindings/java-bindings-metadata
+  -->
+  <!-- Internal stuff and prolly we won't need it -->
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.jni']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.hwproxy']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.viproxy']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.opproxy']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.mzproxy']"/>
+  <!-- Normalize namespace -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']" name="managedName">Baidu.Android.PushService</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.job']" name="managedName">Baidu.Android.PushService.Job</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.message']" name="managedName">Baidu.Android.PushService.Message</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.richmedia']" name="managedName">Baidu.Android.PushService.RichMedia</attr>
+</metadata>
