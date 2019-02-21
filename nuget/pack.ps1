@@ -1,0 +1,1 @@
+nuget.exe pack .\Baidu.Android.PushService.nuspec
