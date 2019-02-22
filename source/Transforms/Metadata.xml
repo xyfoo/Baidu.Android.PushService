@@ -8,15 +8,135 @@
   
   Documentation: https://docs.microsoft.com/en-us/xamarin/android/platform/binding-java-library/customizing-bindings/java-bindings-metadata
   -->
+  
   <!-- Internal stuff and prolly we won't need it -->
+  <!--
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.jni']"/>
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.hwproxy']"/>
-  <remove-node path="/api/package[@name='com.baidu.android.pushservice.viproxy']"/>
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.opproxy']"/>
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.mzproxy']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.viproxy']"/>
+  
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.a']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.b']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.c']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.d']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.e']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.f']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.g']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.h']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.i']"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.j']"/>
+  
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.a']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.b']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.c']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.d']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.e']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.f']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.g']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.h']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.i']/class[string-length(@name)=1]"/>
+  <remove-node path="/api/package[@name='com.baidu.android.pushservice.j']/class[string-length(@name)=1]"/>
+
+  <attr path="/api/package[@name='com.baidu.android.pushservice.a']" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.b']" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.c']" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.d']" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.e']" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.f']" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.g']" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.h']" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.i']" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.j']" name="obfuscated">true</attr>
+
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.a']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.b']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.c']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.d']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.e']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.f']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.g']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.h']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.i']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice.j']/class[string-length(@name)=1]" name="obfuscated">true</attr>
+  -->
+
   <!-- Normalize namespace -->
   <attr path="/api/package[@name='com.baidu.android.pushservice']" name="managedName">Baidu.Android.PushService</attr>
   <attr path="/api/package[@name='com.baidu.android.pushservice.job']" name="managedName">Baidu.Android.PushService.Job</attr>
   <attr path="/api/package[@name='com.baidu.android.pushservice.message']" name="managedName">Baidu.Android.PushService.Message</attr>
   <attr path="/api/package[@name='com.baidu.android.pushservice.richmedia']" name="managedName">Baidu.Android.PushService.RichMedia</attr>
+
+  <!-- context rename -->
+  <attr path="/api/*/*/method[count(parameter)>=1 and parameter[1][@type='android.content.Context']]/parameter[1]" name="managedName">context</attr>
+
+  <!-- PushMessageReceiver.OnBind -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onBind' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='java.lang.String']]/parameter[2]" name="managedName">errorCode</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onBind' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='java.lang.String']]/parameter[3]" name="managedName">appId</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onBind' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='java.lang.String']]/parameter[4]" name="managedName">userId</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onBind' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='java.lang.String']]/parameter[5]" name="managedName">channelId</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onBind' and count(parameter)=6 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String'] and parameter[5][@type='java.lang.String'] and parameter[6][@type='java.lang.String']]/parameter[6]" name="managedName">requestId</attr>
+  <!-- PushMessageReceiver.OnMessage -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onMessage' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[2]" name="managedName">message</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onMessage' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String']]/parameter[3]" name="managedName">customContent</attr>
+  <!-- PushMessageReceiver.OnNotificationClicked, OnNotificationArrived -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[starts-with(@name, 'onNotification') and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String']]/parameter[2]" name="managedName">title</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[starts-with(@name, 'onNotification') and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String']]/parameter[3]" name="managedName">description</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[starts-with(@name, 'onNotification') and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.lang.String'] and parameter[3][@type='java.lang.String'] and parameter[4][@type='java.lang.String']]/parameter[4]" name="managedName">customContent</attr>
+  <!-- PushMessageReceiver.OnSetTags, OnDelTags -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[(@name='onSetTags' or @name='onDelTags') and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[4][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[5][@type='java.lang.String']]/parameter[2]" name="managedName">errorCode</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[(@name='onSetTags' or @name='onDelTags') and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[4][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[5][@type='java.lang.String']]/parameter[3]" name="managedName">successTags</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[(@name='onSetTags' or @name='onDelTags') and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[4][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[5][@type='java.lang.String']]/parameter[4]" name="managedName">failedTags</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[(@name='onSetTags' or @name='onDelTags') and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[4][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[5][@type='java.lang.String']]/parameter[5]" name="managedName">requestId</attr>
+  <!-- PushMessageReceiver.OnListTags -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onListTags' and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[4][@type='java.lang.String']]/parameter[2]" name="managedName">errorCode</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onListTags' and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[4][@type='java.lang.String']]/parameter[3]" name="managedName">tags</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onListTags' and count(parameter)=4 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.util.List&lt;java.lang.String&gt;'] and parameter[4][@type='java.lang.String']]/parameter[4]" name="managedName">requestId</attr>
+  <!-- PushMessageReceiver.OnUnbind -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onUnbind' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String']]/parameter[2]" name="managedName">errorCode</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushMessageReceiver']/method[@name='onUnbind' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String']]/parameter[3]" name="managedName">requestId</attr>
+
+  <!-- PushManager.StartWork -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[@name='startWork' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String']]/parameter[2]" name="managedName">loginType</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[@name='startWork' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='java.lang.String']]/parameter[3]" name="managedName">loginValue</attr>
+  <!-- PushManager.SetNoDisturbMode -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[@name='setNoDisturbMode' and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int'] and parameter[5][@type='int']]/parameter[2]" name="managedName">startHour</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[@name='setNoDisturbMode' and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int'] and parameter[5][@type='int']]/parameter[3]" name="managedName">startMinute</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[@name='setNoDisturbMode' and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int'] and parameter[5][@type='int']]/parameter[4]" name="managedName">endHour</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[@name='setNoDisturbMode' and count(parameter)=5 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int'] and parameter[5][@type='int']]/parameter[5]" name="managedName">endMinute</attr>
+  <!-- PushManager.SetTags, DelTags -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[(@name='setTags' or @name='delTags') and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='java.util.List&lt;java.lang.String&gt;']]/parameter[2]" name="managedName">tags</attr>
+  <!-- PushManager.SetNotificationBuilder -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[@name='setNotificationBuilder' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='com.baidu.android.pushservice.PushNotificationBuilder']]/parameter[2]" name="managedName">id</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[@name='setNotificationBuilder' and count(parameter)=3 and parameter[1][@type='android.content.Context'] and parameter[2][@type='int'] and parameter[3][@type='com.baidu.android.pushservice.PushNotificationBuilder']]/parameter[3]" name="managedName">pushNotificationBuilder</attr>
+  <!-- PushManager.SetDefaultNotificationBuilder, SetMediaNotificationBuilder -->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushManager']/method[(@name='setDefaultNotificationBuilder' or @name='setMediaNotificationBuilder') and count(parameter)=2 and parameter[1][@type='android.content.Context'] and parameter[2][@type='com.baidu.android.pushservice.PushNotificationBuilder']]/parameter[2]" name="managedName">pushNotificationBuilder</attr>
+  
+  <!-- CustomPushNotificationBuilder.ctor-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='CustomPushNotificationBuilder']/constructor[@name='CustomPushNotificationBuilder' and count(parameter)=4 and parameter[1][@type='int'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int']]/parameter[1]" name="managedName">layoutId</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='CustomPushNotificationBuilder']/constructor[@name='CustomPushNotificationBuilder' and count(parameter)=4 and parameter[1][@type='int'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int']]/parameter[2]" name="managedName">layoutIconId</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='CustomPushNotificationBuilder']/constructor[@name='CustomPushNotificationBuilder' and count(parameter)=4 and parameter[1][@type='int'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int']]/parameter[3]" name="managedName">layoutTitleId</attr>
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='CustomPushNotificationBuilder']/constructor[@name='CustomPushNotificationBuilder' and count(parameter)=4 and parameter[1][@type='int'] and parameter[2][@type='int'] and parameter[3][@type='int'] and parameter[4][@type='int']]/parameter[4]" name="managedName">layoutTextId</attr>
+  <!-- CustomPushNotificationBuilder.setLayoutDrawable-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='CustomPushNotificationBuilder']/method[@name='setLayoutDrawable' and count(parameter)=1 and parameter[1][@type='int']]/parameter[1]" name="managedName">drawableId</attr>
+  
+  <!-- PushNotificationBuilder.setNotificationFlag-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushNotificationBuilder']/method[@name='setNotificationFlags' and count(parameter)=1 and parameter[1][@type='int']]/parameter[1]" name="managedName">flags</attr>
+  <!-- PushNotificationBuilder.setNotificationDefaults-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushNotificationBuilder']/method[@name='setNotificationDefaults' and count(parameter)=1 and parameter[1][@type='int']]/parameter[1]" name="managedName">defaults</attr>
+  <!-- PushNotificationBuilder.setStatusbarIcon-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushNotificationBuilder']/method[@name='setStatusbarIcon' and count(parameter)=1 and parameter[1][@type='int']]/parameter[1]" name="managedName">icon</attr>
+  <!-- PushNotificationBuilder.setNotificationSound-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushNotificationBuilder']/method[@name='setNotificationSound' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">soundId</attr>
+  <!-- PushNotificationBuider.setChannelId-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushNotificationBuilder']/method[@name='setChannelId' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">channelId</attr>
+  <!-- PushNotificationBuider.setChannelName-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushNotificationBuilder']/method[@name='setChannelName' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">channelName</attr>
+  <!-- PushNotificationBuilder.setNotificationText-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushNotificationBuilder']/method[@name='setNotificationText' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">text</attr>
+  <!-- PushNotificationBuilder.setNotificationTitle-->
+  <attr path="/api/package[@name='com.baidu.android.pushservice']/class[@name='PushNotificationBuilder']/method[@name='setNotificationTitle' and count(parameter)=1 and parameter[1][@type='java.lang.String']]/parameter[1]" name="managedName">title</attr>
 </metadata>
