@@ -17,7 +17,7 @@ As of 23 Feb 2019
 
 * It will only work if we have it as part of the project.
 * Doesn't work if pull from nuget directly. It will complain of missing libpush_*.so
-* Baidu push doesn't always work if the project have debugger attached to it.
+* Baidu push doesn't always work if You run in DEBUG/RELEASE mode or have a debugger on. Most reliable way to test it is to deploy.
 * Works fine even for phone with Google APIs
 * Working
 
