@@ -17,8 +17,21 @@ As of 23 Feb 2019
 
 * It will only work if we have it as part of the project.
 * Doesn't work if pull from nuget directly. It will complain of missing libpush_*.so
+* Baidu push doesn't always work if the project have debugger attached to it.
+* Works fine even for phone with Google APIs
 * Working
- * Google emulator (Pie/API 28)
+
+  | Name | OS | API Level |
+  | -- | -- | -- |
+  | Google emulator | Lollipop | 22 |
+  | Google emulator | Marshmallow | 23 |
+  | Google emulator | Nougat | 24 |
+  | Google emulator | Oreo | 26 |
+  | Samsung Galaxy S8 | Oreo | 26 |
+  | Google emulator | Pie | 28 |
+  
 * Not working
- * Google emulator (Oreo/API 26)
- * Samsung S8 (Oreo/API 26)
+
+  | Name | OS | API Level |
+  | -- | -- | -- |
+  | Huawei Mate 10, EMUI 9.0 | Pie | 28 |
