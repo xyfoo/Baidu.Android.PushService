@@ -1,4 +1,3 @@
-# !!!! WORK IN PROGRESS !!!
 # Baidu.Android.PushService
 
 Xamarin.Android Bindings for Baidu Push Notification Service
@@ -11,27 +10,7 @@ Xamarin.Android Bindings for Baidu Push Notification Service
 
 As Google Play and FCM (Firebase Cloud Messaging) are not available in China, it is necessary to use different app stores and push services. Baidu is one of them, and currently used by [Azure Notification Hub](https://azure.microsoft.com/en-us/services/notification-hubs/) & [Amazon Simple Notification Service](https://aws.amazon.com/sns/).
 
-## Notes
+## Installation
 
-As of 23 Feb 2019
+Installation instruction is available at [project's wiki](https://github.com/xyfoo/Baidu.Android.PushService/wiki).
 
-* It will only work if we have it as part of the project.
-* Doesn't work if pull from nuget directly. It will complain of missing libpush_*.so
-* Baidu push doesn't always work if You run in DEBUG/RELEASE mode or have a debugger on. Most reliable way to test it is to deploy.
-* Works fine even for phone with Google APIs
-* Working
-
-  | Name | OS | API Level |
-  | -- | -- | -- |
-  | Google emulator | Lollipop | 22 |
-  | Google emulator | Marshmallow | 23 |
-  | Google emulator | Nougat | 24 |
-  | Google emulator | Oreo | 26 |
-  | Samsung Galaxy S8 | Oreo | 26 |
-  | Google emulator | Pie | 28 |
-  
-* Not working
-
-  | Name | OS | API Level |
-  | -- | -- | -- |
-  | Huawei Mate 10, EMUI 9.0 | Pie | 28 |
