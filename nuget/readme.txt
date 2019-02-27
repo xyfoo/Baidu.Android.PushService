@@ -2,7 +2,7 @@
 
 ## Additional steps required
 
-  * TBD
+  * https://github.com/xyfoo/Baidu.Android.PushService/wiki
 
 ## Project
 

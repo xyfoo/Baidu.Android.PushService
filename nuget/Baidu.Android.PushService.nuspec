@@ -5,7 +5,7 @@
         <id>Baidu.Android.PushService</id>
 
         <!-- The package version number that is used when resolving dependencies -->
-        <version>1.0.3</version>
+        <version>1.0.4</version>
 
         <!-- Authors contain text that appears directly on the gallery -->
         <authors>Frankie Foo</authors>
@@ -33,9 +33,7 @@
 
         <!-- Any details about this particular release -->
         <releaseNotes>
-        Initial release.
-
-        Refer to project site's wiki for additional required setup.
+        Initial release. Refer to project site's wiki for additional required setup.
         </releaseNotes>
 
         <!-- 
