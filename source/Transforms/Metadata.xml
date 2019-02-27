@@ -10,13 +10,13 @@
   -->
   
   <!-- Internal stuff and prolly we won't need it -->
-  <!--
+  
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.jni']"/>
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.hwproxy']"/>
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.opproxy']"/>
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.mzproxy']"/>
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.viproxy']"/>
-  
+  <!--
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.a']"/>
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.b']"/>
   <remove-node path="/api/package[@name='com.baidu.android.pushservice.c']"/>
