@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
-    <!-- Requires nuget >= 3.3 too support contentfiles -->
-    <metadata minClientVersion="3.3">
+    <metadata>
         <!-- The identifier that must be unique within the hosting gallery -->
         <id>Baidu.Android.PushService</id>
 
@@ -24,7 +23,7 @@
         <license type="expression">MIT</license>
 
         <!-- The icon is used in Visual Studio's package manager UI -->
-        <iconUrl>https://raw.githubusercontent.com/xyfoo/Baidu.Android.PushService/master/logo.png</iconUrl>
+        <iconUrl>https://raw.githubusercontent.com/xyfoo/Baidu.Android.PushService/master/art/logo.png</iconUrl>
 
         <!-- 
             If true, this value prompts the user to accept the license when
@@ -34,14 +33,14 @@
 
         <!-- Any details about this particular release -->
         <releaseNotes>
-        Initial release
+        Initial release.
         </releaseNotes>
 
         <!-- 
             The description can be used in package manager UI. Note that the
             nuget.org gallery uses information you add in the portal. 
         -->
-        <description>Xamarin.Android Bindings for Baidu Push Notification - 6.5.0.57</description>
+        <description>Xamarin.Android Bindings for Baidu Push Notification - 6.5.0.75</description>
 
         <!-- Copyright information -->
         <copyright></copyright>
