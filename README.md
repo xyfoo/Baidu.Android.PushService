@@ -18,3 +18,7 @@ Baidu Cloud Push can be deployed to both Google/AOSP devices.
 
 Installation instruction is available at [project's wiki](https://github.com/xyfoo/Baidu.Android.PushService/wiki).
 
+## Walkthrough
+
+https://xyfoo.github.io/2019/03/16/using-baidu-push-in-xamarin.html
+
